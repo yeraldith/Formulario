@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de conocimientos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header> 
+            <img src="image/bancolombia.png" alt="" >
+    </header>
+    <main class="main">
+        <div class="container"> 
+            <form action="#" id="survey-form" >
+                <h1 id="title">Solicitud Crédito de libre Inversión </h1><br>
+                <p id="description">A través de este formulario se recibe la solicitud para Crédito de Libre Inversión.</p>
+            <div class="container">
+                    <label class="label" for="name" id="name-label">Nombre</label>
+                    <input class="input" type="text" id="name" placeholder="Ingrese su nombre" required="">
+            </div>
+            <div class="container">
+                    <label class="label" for="email" id="email-label">Email</label>
+                    <input class="input" type="email" id="email" placeholder="Ingrese su correo" required="">
+            </div>
+            <div class="container">
+                <label class="label" for="phone">Número de celular:</label>
+                <input class="input" type="tel" id="phone" name="phone" placeholder="3233456788"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
+            </div>
+            <div class="container">
+                <p>Tipo de documento de identidad</p>
+                <select id="dropdown" required="">
+                <option disabled="" selected="" value="">Seleccione</option>
+                <option value="cedula">Cédula de ciudadanía</option>
+                <option value="extrangeria">Cédula de extrangería</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="tarjeta">Tarjeta de identidad</option>
+                <option value="registrocivil">Registro civil</option>
+                <option value="carnediplomatico">Carné diplomático</option>
+                </select>
+                </div>
+            <div class="container">
+                <label class="label" for="edad" id="number-label">Edad</label>
+                <input class="input" type="number" id="edad" placeholder="Edad" required="" min="15" max="100">
+            </div>  
+            <div class="container">
+                <label class="label" for="number" id="number-label">Número de documento de identidad</label>
+                <input class="input" type="text" id="number" placeholder="Número de documento" maxlength="15" required="">
+            </div> 
+            <div class="container">
+                <label class="label" for="date" id="number-label" >Fecha de nacimiento</label>
+                <input class="input" type="date" id="date"min="2000-01-01" max="2014-12-31" required="">
+            </div> 
+            <div class="container"> 
+                <div class="container-radio">
+                <p>Seleccione el medio para recibir información</p>
+                <label for="optemail"><input id="optemail" class="input-radio" name="email" type="radio" value="sendemail">Email</label>
+                <label for="optphone"><input class="input-radio" id="optphone" name="phone" type="radio" value="sendphone">Mensaje de texto </label>   
+            </div>
+        </div>
+            <div class="container">
+                <p>Ingresos mensuales</p>
+                <label class="checkbox" ><input  type="checkbox" id="option1" value="min">Entre 1 y 2 SMLV</label>
+                <label class="checkbox"> <input type="checkbox" id="option2" value="med">Entre 3 y 4 SMLV</label>
+                <label class="checkbox"> <input type="checkbox" id="option3" value="max">Más de 6 SMLV</label>
+            </div>
+            <div class="container">
+                <p>Espacio para preguntas</p>
+                <textarea name="inquietudes" id="txt-area" cols="30" rows="10"></textarea>
+            </div>
+            <div class="container">
+                <button type="submit" id="submit">
+                 Enviar
+                </button>
+            </div>
+            </div>  
+            </form>     
+     </main>
+
+    <footer class="footer">
+            <img src="/wcm/connect/www.grupobancolombia.com15880/64315cfa-5be5-42e7-83d8-9b2a259f5712/mob_logo_footer%402x.png?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_K9HC1202PGD140QU35SB3R10O3-64315cfa-5be5-42e7-83d8-9b2a259f5712-mIKvLWp" alt="" class="imagen_banco">
+            <p>Copyright © 2020 Grupo Bancolombia. </p>
+            <img src="/wcm/connect/www.grupobancolombia.com15880/6fc065dd-0c38-451b-b2bc-1d4ba096d056/desk_logo_vigilado.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_K9HC1202PGD140QU35SB3R10O3-6fc065dd-0c38-451b-b2bc-1d4ba096d056-mLSuUDf" alt="" class="imagen_vigilado">
+    </footer>
+    
+    
+</body>
+</html>

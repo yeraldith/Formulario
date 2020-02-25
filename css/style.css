@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Give+You+Glory&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image:url('/image/fondo.jpg') ;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+/*---------header--------*/
+
+/*--------main----------*/
+.form{
+    width: 600px;
+    display: flex;
+}
+.container{
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 10px 30px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color:rgba(94, 100, 185, 0.13);
+}
+.container .label {
+    display: block;
+    font-weight: 300;
+    position: relative;
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+input[type="checkbox"]{
+    display:inline-block;
+    width:19px;
+    height:19px;
+    background:url(/image/checkboox.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked{
+    background:url(/image/checkboox.png)  left top no-repeat;
+}
+.container .checkbox{
+    font-size: 16px;
+    font-family: 'roboto';
+}
+.container-radio .radio{
+    font-size: 16px;
+    font-family: 'roboto';
+}
+.container-radio .input-radio{
+    width: 20px;
+    height: 20px;
+}
+.container-radio{
+    align-items: center;
+    justify-content: left;
+    margin: 0;
+}
+.container p{
+    display: block;
+    font-weight: 300;
+    position: relative;
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+option, select, input{
+    outline: none;
+    background-color:rgba(247, 17, 17, 0.082);
+    border: none;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: black;
+}
+.container button{
+    width: 100%;
+    height: 60px;
+    background-color:rgba(5, 52, 105, 0.90);
+    font-family: 'roboto';
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+}
+.container button:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    color: white;
+}
+#title{
+    font-weight: 900;
+    font-size: 26px;
+    color: rgba(40, 25, 124, 0.979);
+    padding: 10px;
+    text-align: center;
+}
+#description{
+    color: rgb(66, 60, 27);
+    padding: 10px;
+    text-align: justify;
+}
+#txt-area{
+    width: 100%;
+    height: 100%;;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color:rgba(0, 0,0, 0.12) ;
+}
